@@ -1,4 +1,5 @@
 import 'package:krisapp/main.dart';
+import 'package:krisapp/page/to_do_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -257,6 +258,16 @@ class _MyFormPageState extends State<MyFormPage> {
               );
             },
           ),
+          ListTile(
+            title: const Text('To Do'),
+            onTap: () {
+                // Route menu ke halaman to do
+                Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const ToDoPage()),
+                );
+            },
+        ),
         ],
               ),
             ),
